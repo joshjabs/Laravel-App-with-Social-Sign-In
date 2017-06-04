@@ -76,10 +76,19 @@
                         <hr>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <a href="{{ url('/auth/github') }}" class="btn btn-github"><i class="fa fa-github"></i> Github</a>
-                                <a href="{{ url('/auth/twitter') }}" class="btn btn-twitter" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
-                                <a href="{{ url('/auth/facebook') }}" class="btn btn-facebook" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
 
+                                <a href="{{ url('/auth/github') }}" class="btn btn-block btn-social btn-github">
+                                  <span class="fa fa-github"></span> Sign in with GitHub
+                                </a>
+
+                                <a href="{{ url('/auth/facebook') }}" class="btn btn-block btn-social btn-facebook">
+                                  <span class="fa fa-facebook"></span> Sign in with Facebook
+                                </a>
+
+
+                                <a href="{{ url('/auth/twitter') }}" class="btn btn-block btn-social btn-twitter">
+                                  <span class="fa fa-twitter"></span> Sign in with Twitter
+                                </a>
                             </div>
                         </div>
                     </form>
